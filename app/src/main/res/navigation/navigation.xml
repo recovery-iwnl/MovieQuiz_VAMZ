@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_chooseLevelFragment"
+            app:destination="@id/chooseLevelFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseLevelFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.ChooseLevelFragment"
+        android:label="fragment_choose_level"
+        tools:layout="@layout/fragment_choose_level" >
+        <action
+            android:id="@+id/action_chooseLevelFragment_to_levelOneFragment"
+            app:destination="@id/levelOne" />
+        <action
+            android:id="@+id/action_chooseLevelFragment_to_levelTwoFragment"
+            app:destination="@id/levelTwoFragment" />
+        <action
+            android:id="@+id/action_chooseLevelFragment_to_levelThreeFragment"
+            app:destination="@id/levelThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelOne"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.LevelOneFragment"
+        android:label="LevelOne"
+        tools:layout="@layout/fragment_level_one" >
+        <action
+            android:id="@+id/action_levelOneFragment_to_movieGameFragment"
+            app:destination="@id/movieGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieGameFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.MovieGameFragment"
+        android:label="fragment_movie_game"
+        tools:layout="@layout/fragment_movie_game" />
+    <fragment
+        android:id="@+id/levelTwoFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.LevelTwoFragment"
+        android:label="LevelTwoFragment"
+        tools:layout="@layout/fragment_level_two" >
+        <action
+            android:id="@+id/action_levelTwoFragment_to_movieGameFragment"
+            app:destination="@id/movieGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/levelThreeFragment"
+        android:name="com.example.semestralna_praca_vamz_movie_quiz.fragments.LevelThreeFragment"
+        android:label="LevelThreeFragment"
+        tools:layout="@layout/fragment_level_three">
+        <action
+            android:id="@+id/action_levelThreeFragment_to_movieGameFragment"
+            app:destination="@id/movieGameFragment" />
+    </fragment>
+</navigation>

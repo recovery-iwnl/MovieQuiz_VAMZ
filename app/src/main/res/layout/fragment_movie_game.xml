@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_movie"
+    android:scaleType="fitStart"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".fragments.LevelOneFragment">
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_designed"
+            android:drawableTop="@drawable/back_arrow"
+            app:layout_constraintBottom_toTopOf="@+id/moviePicture"
+            app:layout_constraintEnd_toStartOf="@+id/score"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/text_view_designed"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:fontFamily="@font/turretroadbold"
+            android:textSize="30dp"
+            android:typeface="monospace"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/moviePicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="309dp"
+            android:layout_height="86dp"
+            android:background="@drawable/text_view_designed"
+            android:fontFamily="@font/turretroadbold"
+            android:gravity="center"
+            android:text="0000"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:typeface="monospace"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moviePicture"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:ellipsize="end"
+            app:layout_constraintVertical_bias="0.519" />
+
+        <ImageView
+            android:id="@+id/moviePicture"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="369dp"
+            android:layout_height="325dp"
+            android:layout_marginTop="92dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/checkmark"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/purple_500"
+            android:gravity="center"
+            android:src="@drawable/checkmark"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.325" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/guess"
+            android:layout_width="296dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="124dp"
+            android:background="@drawable/button_designed"
+            android:fontFamily="@font/turretroadbold"
+            android:hint="Guess The Name Here"
+            android:inputType="textVisiblePassword|textCapCharacters"
+            android:importantForAutofill="no"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            app:errorIconDrawable="@android:drawable/ic_dialog_alert"
+            app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ENTER"
+            android:textColor="@color/white"
+            android:background="@drawable/button_designed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guess"
+            app:layout_constraintVertical_bias="0.266" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

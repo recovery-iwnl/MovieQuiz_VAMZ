@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_movie"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".fragments.ChooseLevelFragment">
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/text_view_designed"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:fontFamily="@font/turretroadbold"
+            android:typeface="monospace"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/Level2Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Level2Title"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="85dp"
+            android:background="@drawable/text_view_designed"
+            android:fontFamily="@font/turretroadbold"
+            android:text="LEVEL 2"
+            android:textColor="@color/white"
+            android:textSize="55dp"
+            android:typeface="monospace"
+            android:gravity="center"
+            app:autoSizeMaxTextSize="55sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <ImageButton
+            android:id="@+id/pulp"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pulp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inception"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <ImageButton
+            android:id="@+id/fightClub"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fightclub"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/joker"
+            app:layout_constraintStart_toEndOf="@+id/pulp"
+            app:layout_constraintTop_toBottomOf="@+id/alien"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <ImageButton
+            android:id="@+id/joker"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/joker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parasite"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <ImageButton
+            android:id="@+id/inception"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/inception"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/killbill"
+            app:layout_constraintVertical_bias="0.096" />
+
+        <ImageButton
+            android:id="@+id/alien"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alien"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/parasite"
+            app:layout_constraintStart_toEndOf="@+id/inception"
+            app:layout_constraintTop_toBottomOf="@+id/goodfellas"
+            app:layout_constraintVertical_bias="0.096" />
+
+        <ImageButton
+            android:id="@+id/parasite"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:layout_marginBottom="288dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/parasite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greenmile"
+            app:layout_constraintVertical_bias="0.939" />
+
+        <ImageButton
+            android:id="@+id/killbill"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/killbill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.327" />
+
+        <ImageButton
+            android:id="@+id/goodfellas"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/goodfellas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/greenmile"
+            app:layout_constraintStart_toEndOf="@+id/killbill"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.327" />
+
+        <ImageButton
+            android:id="@+id/greenmile"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="125dp"
+            android:layout_height="102dp"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop"
+            android:src="@drawable/greenmile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.327" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_designed"
+            android:drawableTop="@drawable/back_arrow"
+            app:layout_constraintBottom_toTopOf="@+id/Level2Title"
+            app:layout_constraintEnd_toStartOf="@+id/score"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
